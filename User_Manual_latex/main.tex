@@ -1,0 +1,39 @@
+% IMPORT SETTINGS
+\documentclass[12pt,oneside]{report}
+\input{include/settings/Settings}
+\begin{document} 
+
+% COVER PAGE, TITLE PAGE AND IMPRINT PAGE
+\pagenumbering{roman}			% Roman numbering (starting with i (one)) until first main chapter
+\input{Titlepage}
+
+% TABLE OF CONTENTS
+\newpage
+\tableofcontents
+
+% START OF MAIN DOCUMENT
+\cleardoublepage
+\setcounter{page}{1}
+\pagenumbering{arabic}			% Arabic numbering starting from 1 (one)
+\setlength{\parskip}{0pt plus 1pt}
+
+%% To add content edit respective chapter files in 'include' folder
+
+% INTRODUCTION
+\input{include/Introduction}
+
+% SUMMARY
+\input{include/Summary}
+
+% GETTING STARTED
+\input{include/Started}
+
+
+% SECURITY
+\input{include/Security}
+
+
+%CONCLUSION
+\input{include/Conclusion}
+
+\end{document}
